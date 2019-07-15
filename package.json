@@ -1,0 +1,16 @@
+{
+  "name": "crappyvcs",
+  "version": "1.0.0",
+  "description": "A toy VCS that uses event sourcing. ",
+  "main": "index.js",
+  "dependencies": {
+    "request": "^2.88.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maz Jindeel",
+  "license": "ISC"
+}
