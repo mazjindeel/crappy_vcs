@@ -31,7 +31,7 @@ createFile = function(fileName, fileContents, project="testing", fileId=uuid.v1(
 		},
 		json: true,   // adds "content-type:application/json"
 		body: data
-	}, function(error, response, body) {
+	}, (error, response, body) => {
 		if (error) console.log(error);
 	});
 }
@@ -129,7 +129,7 @@ var contents = "foobarco is the best company";
 createFile(fileName, contents);
 
 // TODO: we need to have some delay between these two calls! Right now, we don't get the newly-created file as a response. The right way to deal with this? Callbacks! Bah!
-readStream(FILE_CREATE, function(event) {
+readStream(FILE_CREATE, (event) => {
 	console.log("fileName is: ", fileName);
 	console.log("event na is: ", event.name);
 	if (event.name == fileName) {
