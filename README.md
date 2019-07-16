@@ -17,7 +17,7 @@ the hood to manage the differences between files
 
 ## Running
 
-1. Run the event source. You can simply enter the `eventsource` command to run a default configuration. 
+1. Run the event source. You can simply enter the `eventsource` command to run a default configuration. Use `eventsource --mem-db` to use an in-memory database (this way you start fresh every time you restart it)
 2. While the eventsource server is running, you can run `node index.js` to run the app. 
 	* Right now the app simply creates a bunch of FILE\_CREATE events and reads all the previous FILE\_CREATE events.
 3. You can visit [localhost:2113](localhost:2113) and log in with credentials `admin`/`changeit` to view the server's GUI (more details on eventsource's site linked above).
