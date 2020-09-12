@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A toy VCS that uses event sourcing. ",
   "dependencies": {
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "uuid": "^3.3.2"
   },
   "devDependencies": {},
